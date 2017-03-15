@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chat-bot</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <script type="text/javascript">
+      var username = 'charlie';
+      var age  = 'turduken';
+      var matchLocation = 'new york';
+      var posSmoker = 'non-smoker'
+    </script>
+  </head>
+  <body>
+<div id="header"> </div>
+<div id ="hero">
+  <img id="heroImage" src="img/robot.jpeg">
+  <div id="heroText">
+    <h3 id="herotag">Find your match</h3>
+    <input type="nextForm" name="nextForm" id="nextForm" value="Let MotherBot Help"/>
+    </div>
+</div>
+
+<div class="container" id="prefForm">
+<div class ="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+  <h2>Preferences<img style="max-width:60px" src="img/gear.svg"></h2>
+  <h5>MotherBot will screen for matches</h5>
+  <!--form fields-->
+  <div id="userPrefForm" class="mt35">
+  <div class="form-group">
+    <label>What is your name?</label>
+    <input class="form-control" type="text" name="username" id="username" placeholder="Please input your name"/>
+  </div> 
+  <div class="form-group">     
+    <label>How old should your matches to be?</label>
+    <input class="form-control" type="text" name="age" id="age" placeholder="Please input age for matches"/>
+   </div> 
+  <div class="form-group">     
+    <label>Where would you like your matches to live?</label>
+    <input class="form-control" type="matchLocation" name="matchLocation" id="matchLocation" placeholder="Please input location for matches"/>
+  </div> 
+   <div class="form-group">     
+    <label>Would you prefer a smoker or non-smoker?</label>
+    <input class="form-control" type="posSmoker" name="posSmoker" id="posSmoker" placeholder="Please input desired smoking habit"/>
+  </div>
+  <div class="form-group">     
+    <label>What is your religious preference?</label>
+    <input class="form-control" type="religion" name="religion" id="religion" placeholder="Please input your religion"/>
+  </div>
+  <div class="form-group">     
+    <label>Carnivore or vegetarian?</label>
+    <input class="form-control" type="diet" name="diet" id="diet" placeholder="Please input dietary habits for matches"/>
+  </div>
+  <div class="form-group">     
+    <label>Children or no children?</label>
+    <input class="form-control" type="children" name="children" id="children" placeholder="Please input whether or not you want children"/>
+  </div> 
+  <!--submit button-->
+  <input type="submit" name="submit" id="submit" value="Submit"/>
+</div>
+</div><!--col-md-8-->
+</div><!--container-->
+
+  <div class="container" id="robot">
+    <h2 class="tac">Screening <img style="max-width:60px" src="img/chat.svg"></h2>
+    <h5 id="chatSubtitle">"hi"</h5>
+      <div class="row">
+        <div class=" mt35 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="chat"></div>
+          <div class="busy"></div>
+          <div class="row">
+            <div class="input">
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" id="messageInput" placeholder="Chat with me!"/>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <a id="chatSend">Send</a>
+              </div>
+            </div><!--input-->
+          </div><!--row-->
+        </div><!--col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10-->
+      </div><!--row-->
+    </div><!--container-->
+
+    <footer id="footer" class="tac">
+    <p>Motherbot</p>
+    <p>assistance@motherbot.co</p>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/chat-bot.js"></script>
+  </body>
+</html>
